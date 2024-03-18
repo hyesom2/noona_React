@@ -1,11 +1,13 @@
 import React from 'react'
 
-const Box = () => {
+const Box = (props) => {
+  console.log(props);
+  
   return (
     <div>
       <div className="box">
-        Box1
-        <p>곽철이</p>
+        Box{ props.num }
+        <p>{ props.name }</p>
       </div>
     </div>
   )
